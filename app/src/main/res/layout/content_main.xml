@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:background="@mipmap/cd"
+    android:layout_height="match_parent"
+    tools:ignore="UselessParent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@drawable/clock">
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="@string/month"/>
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOrange"
+            android:layout_marginEnd="8dp"
+            android:textSize="22sp"
+            android:text="@string/year"/>
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/colorGreen"
+            android:text="@string/Day" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/starting_date"
+        android:gravity="center"
+        android:background="#FB9B94"
+        android:fontFamily="serif-monospace"
+        android:padding="10dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/colorGreen"
+        android:textSize="22sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:textStyle="bold"
+            android:id="@+id/tyr"
+            android:hint="@string/year"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:inputType="date"
+            tools:ignore="Autofill" />
+        <EditText
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/tmnth"
+            android:width="100dp"
+            android:hint="@string/month"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            tools:ignore="Autofill" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tday"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:hint="@string/Day"
+            android:width="100dp"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ending_date"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:textStyle="italic|bold"
+        android:gravity="center"
+        android:fontFamily="serif-monospace"
+        android:background="#D0B9FA"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/pyr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:hint="@string/year"
+            android:width="100dp"
+            android:layout_margin="10dp"
+            android:inputType="date"
+            tools:ignore="Autofill" />
+        <EditText
+            android:id="@+id/pmnth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="100dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:hint="@string/month"
+            android:layout_margin="10dp"
+            android:inputType="date"
+            tools:ignore="Autofill" />
+        <EditText
+            android:id="@+id/pday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:hint="@string/Day"
+            android:width="100dp"
+            android:layout_margin="10dp"
+            android:inputType="date"
+            tools:ignore="Autofill" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="2dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="150dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/principle"
+            android:gravity="center"
+            android:hint="@string/amount"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:inputType="date"
+            tools:ignore="Autofill" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:width="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rate"
+            android:hint="@string/rate"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:inputType="date"
+            tools:ignore="Autofill" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/calculate"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:backgroundTint="@color/colorGreen"
+            android:background="@drawable/btn_bg"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:layout_margin="4dp"
+            android:text="@string/reset"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#676060"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/btn_bg"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorGreen"
+        android:text="@string/results_here"/>
+
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

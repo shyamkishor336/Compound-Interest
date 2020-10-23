@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#CDDC39"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@mipmap/splashlogo"/>
+    <TextView
+        android:id="@+id/quiz_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculate your compound interest\n easily within a second\n in a single click\n               -COMPOUND INTEREST"
+        android:textColor="#9C27B0"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"/>
+
+
+
+
+</LinearLayout>

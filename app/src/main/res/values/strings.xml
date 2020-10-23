@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Compound Interest</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="month">Month</string>
+    <string name="starting_date">Starting Date</string>
+    <string name="year">Year</string>
+    <string name="Day">Day</string>
+    <string name="amount">Amount</string>
+    <string name="rate">Rate</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="results_here">Results Here</string>
+    <string name="ending_date">Ending Date</string>
+</resources>
